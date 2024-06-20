@@ -22,25 +22,25 @@ const initialStories = [
 ];
 
 function App() {
-  const [stories] = useState(initialStories);
-  const [searchTerm, setSearchTerm] = useState("");
+  const [newstories] = useState(initialStories);
+  const [searchinput, setsearchinput] = useState("");
 
-  const filteredStories = stories.filter((story) =>
-    story.title.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredDataStories = newstories.filter((story) =>
+    story.title.toLowerCase().includes(searchinput.toLowerCase())
   );
-  console .log(filteredStories)
+  console .log(filteredDataStories)
 
   return (
     <div>
-      <h1>Stories</h1>
+      <h1 >Stories</h1>
 
       <input
         type="text"
         placeholder="Search stories"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
+        value={searchinput}
+        onChange={(input) => setsearchinput(input.target.value)}
       />
-      <ListComponent list={filteredStories} />
+      <ListComponent list={filteredDataStories} />
     </div>
   );
 }

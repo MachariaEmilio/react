@@ -1,6 +1,6 @@
 const ItemComponent = ({ item }) => (
     <div>
-      <h2>
+      <h2 >
         <a href={item.url}>{item.title}</a>
       </h2>
       <p>Author: {item.author}</p>
