@@ -1,4 +1,5 @@
 import { useState } from "react";
+import LoginForm from "./component/login/logincomponent";
 import ListComponent from "./component/list component/list";
 import "./App.css";
 
@@ -19,20 +20,28 @@ const initialStories = [
     points: 5,
     objectID: 1,
   },
+  {
+    title: "amingo",
+    url: "https://redux.js.org/",
+    author: "Dan Abramov, Andrew Clark",
+    num_comments: 2,
+    points: 5,
+    objectID: 3,
+  }
 ];
 
 function App() {
-  const [newstories] = useState(initialStories);
+  // const [newstories] = useState(initialStories);
   const [searchinput, setsearchinput] = useState("");
 
-  const filteredDataStories = newstories.filter((story) =>
+  const filteredDataStories = initialStories.filter((story) =>
     story.title.toLowerCase().includes(searchinput.toLowerCase())
   );
   console .log(filteredDataStories)
 
   return (
     <div>
-      <h1 >Stories</h1>
+      {/* <h1 >Stories</h1>
 
       <input
         type="text"
@@ -40,7 +49,14 @@ function App() {
         value={searchinput}
         onChange={(input) => setsearchinput(input.target.value)}
       />
-      <ListComponent list={filteredDataStories} />
+    <ListComponent list={filteredDataStories} />
+     */}
+    <hr />
+    <LoginForm/>
+
+    
+    
+    
     </div>
   );
 }
