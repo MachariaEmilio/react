@@ -31,7 +31,7 @@ const initialStories = [
 ];
 
 function App() {
-  // const [newstories] = useState(initialStories);
+  const [newstories] = useState(initialStories);
   const [searchinput, setsearchinput] = useState("");
 
   const filteredDataStories = initialStories.filter((story) =>
@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div>
-      {/* <h1 >Stories</h1>
+       <h1 >Stories</h1>
 
       <input
         type="text"
@@ -50,7 +50,7 @@ function App() {
         onChange={(input) => setsearchinput(input.target.value)}
       />
     <ListComponent list={filteredDataStories} />
-     */}
+     
     <hr />
     <LoginForm/>
 
