@@ -1,4 +1,4 @@
-export const initialProducts = [
+export const data_products = [
     {
       title: "Jordan Proto Lyte",
       collection: "Running Collection",

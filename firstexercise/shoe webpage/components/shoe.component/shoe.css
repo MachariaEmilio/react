@@ -10,6 +10,7 @@
     background-color: green;
     width: 600px;
     height: 350px;
+    margin:10px;
     
 }
 .images{
@@ -21,8 +22,10 @@
     flex-direction: column;
 }
 .info{
-background-color: blue;
-    display: flex;
+background-color: rgba(229, 237, 241, 0.932);
+color: black;    
+
+display: flex;
     flex-direction: column;
 
     align-items:center;
@@ -37,7 +40,6 @@ background-color: blue;
     border-radius: 50%;
     margin:10px ;
     height:2px;
-    background-color: red;
     width: 2px;
 }
 .submit{
@@ -50,4 +52,15 @@ background-color: blue;
 }
 .submit button{
   border-radius: 20px;
+  /* color:  white; */
+  background-color:  transparent;
+}
+
+.button1{
+    background-color: rgb(14, 14, 17);
+}
+.button2{
+    background-color: red;
+}.button3{
+    background-color: orange;
 }

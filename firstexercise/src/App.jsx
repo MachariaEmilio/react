@@ -2,10 +2,10 @@ import { useState } from "react";
 import LoginForm from "../login/logincomponent";
 import ListComponent from "./component/list component/list";
 import "./App.css";
-import {FilterCom} from "../ecomerce/filter.component/filter";
-import { Populate } from "../shoe webpage/components/shoe.component/shoe";
+import { data_products } from "../shoe webpage/utils/database/data";
+import Datamap from "../shoe webpage/components/list.component/productmap";
 
-
+import { FilterCom } from "../ecomerce/filter.component/filter";
 const initialStories = [
   {
     title: "React",
@@ -151,10 +151,13 @@ function App() {
     <LoginForm/>
 
     <hr />
+
+<FilterCom data={data}/>
+
+   <hr />
+    <Datamap items={data_products}/>
    
-    <FilterCom data={data}/>
-    {/* <Populate/> */}
-    
+  
     </div>
   );
 }

@@ -25,14 +25,19 @@ export const FilterCom = ({ data }) => {
   );
 
   const filteredbycategory = data.filter((data) => {
-    if (Electronics) {
-      let arr = data.category ==="Electronics"
-      return arr
-
-      // return data.category==="Electronics";
-    } else if (clothing) {
-      return data.category.includes("Clothing");
-    } else if (home) {
+    if (clothing & Electronics & home) {
+      return data.category.includes("o");
+    } else if (clothing & Electronics & !home) {
+      return data.category.includes("t");
+    } else if (clothing & !Electronics & home) {
+      return data.category.toLowerCase().includes("h");
+    } else if (!clothing & Electronics & home) {
+      return data.category.includes("e");
+    } else if (clothing & !Electronics & !home) {
+      return data.category.includes("lothing");
+    } else if (!clothing & Electronics & !home) {
+      return data.category.includes("Electr");
+    } else if (!clothing & !Electronics & home) {
       return data.category.includes("Home");
     }
   });
