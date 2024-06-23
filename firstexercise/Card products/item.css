@@ -1,0 +1,67 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+  .container{
+    display: flex;
+    flex-direction: row;
+  }
+  .container h2{
+    margin-top: 60px;
+    margin-left: -122px;
+  }
+  .container img{
+    margin-top:45px;
+    rotate: -25deg;
+    width: 350px;
+    padding-left: -250px;
+    margin-left: -80px;
+  }
+  .image{
+    width:230px
+  }
+.info{
+    width: 430px;
+}
+.info h2{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    padding-left: 30px;
+}
+.para{
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    opacity: 80%;
+    text-transform: uppercase;
+ margin-left: -140px; 
+}
+.colors{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding-left: 20px;
+}
+.colors p{
+    margin-top:8px ;
+}
+.colors button{
+    border-radius: 50%;
+    height:0px;
+    width:0px;
+    margin: 10px;
+}
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.price p{
+margin-left: 85px;
+}
+.price button{
+    margin-right: 80px;
+    border-radius: 40px;
+}
